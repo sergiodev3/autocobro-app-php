@@ -1,0 +1,7 @@
+# Ignorar credenciales reales
+config/database.php
+
+# Ignorar archivos de base de datos privados (si tienes datos de ejemplo reales)
+# config/datos.db.sql
+
+# Ignorar imágenes de productos (opcionales) images/
