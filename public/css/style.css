@@ -1,0 +1,141 @@
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: linear-gradient(120deg, #f4f4f4 60%, #e0eaff 100%);
+	min-height: 100vh;
+	margin: 0;
+}
+.container {
+	max-width: 1000px;
+	margin: 40px auto;
+	background: #fff;
+	padding: 2.5em 2em;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px #b3c6e0;
+	animation: fadein 0.7s;
+}
+#products-table {
+	border-collapse: separate;
+	border-spacing: 0 0.5em;
+}
+#products-table th, #products-table td {
+	padding: 0.7em 0.5em;
+	text-align: center;
+	vertical-align: middle;
+}
+#products-table th {
+	background: #e0eaff;
+	color: #2a4d8f;
+	font-weight: 600;
+	font-size: 1.05em;
+}
+#products-table td {
+	background: #f8fbff;
+	border-radius: 8px;
+}
+#products-table td img {
+	margin: 0 auto;
+	display: block;
+	height: 70px;
+	width: 70px;
+	object-fit: contain;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+}
+#products-table td, #products-table th {
+	text-align: center;
+	vertical-align: middle;
+}
+#products-table td[style*="display:flex"] {
+	gap: 10px !important;
+	justify-content: center !important;
+	flex-wrap: wrap !important;
+	min-width: 170px;
+}
+#products-table td[style*="display:flex"] {
+	gap: 10px !important;
+	justify-content: center !important;
+	flex-wrap: wrap !important;
+}
+@keyframes fadein {
+	from { opacity: 0; transform: translateY(30px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+h1 {
+	text-align: center;
+	color: #2a4d8f;
+	margin-bottom: 1.2em;
+	letter-spacing: 1px;
+}
+input, select {
+	margin: 0.5em 0;
+	padding: 0.6em;
+	width: 100%;
+	border: 1px solid #b3c6e0;
+	border-radius: 6px;
+	font-size: 1em;
+	transition: border 0.2s;
+}
+input:focus, select:focus {
+	border: 1.5px solid #2a4d8f;
+	outline: none;
+}
+button {
+	margin: 0.5em 0;
+	padding: 0.6em 1.2em;
+	border: none;
+	border-radius: 6px;
+	background: linear-gradient(90deg, #2a4d8f 60%, #4e8cff 100%);
+	color: #fff;
+	font-size: 1em;
+	font-weight: 500;
+	cursor: pointer;
+	box-shadow: 0 2px 8px #b3c6e0;
+	transition: background 0.2s, transform 0.1s;
+}
+button:hover {
+	background: linear-gradient(90deg, #4e8cff 60%, #2a4d8f 100%);
+	transform: translateY(-2px) scale(1.04);
+}
+ul#cart {
+	list-style: none;
+	padding: 0;
+	margin: 0.5em 0 0 0;
+}
+ul#cart li {
+	padding: 0.5em 0.3em;
+	border-bottom: 1px solid #e0eaff;
+	background: #f8fbff;
+	border-radius: 6px;
+	margin-bottom: 0.3em;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	animation: fadein 0.5s;
+}
+#cart li button {
+	width: 40px;
+	min-width: 40px;
+	max-width: 40px;
+	padding: 0.3em 0;
+	text-align: center;
+	font-size: 0.95em;
+}
+#ticket-section {
+	background: #222;
+	color: #fff;
+	padding: 1.2em;
+	border-radius: 10px;
+	margin-top: 1.5em;
+	font-family: 'Fira Mono', 'Consolas', monospace;
+	font-size: 1.1em;
+	box-shadow: 0 2px 8px #b3c6e0;
+	letter-spacing: 0.5px;
+}
+@media (max-width: 600px) {
+	.container {
+		max-width: 98vw;
+		padding: 1em 0.2em;
+	}
+	h1 { font-size: 1.3em; }
+	#ticket-section { font-size: 0.95em; }
+}

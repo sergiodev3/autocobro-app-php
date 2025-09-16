@@ -1,0 +1,47 @@
+Listado de rutas de carpetas
+htdocs:
+|---.htaccess     
++---app
+|   +---controllers
+|   |       MainController.php
+|   |       ProductAdminController.php
+|   |       ProductController.php
+|   |       PurchaseController.php
+|   |       UserController.php
+|   |       
+|   +---models
+|   |       Product.php
+|   |       Purchase.php
+|   |       User.php
+|   |       
+|   \---views
+|       |   main.php
+|       |   
+|       \---products
+|               create.php
+|               edit.php
+|               index.php
+|               
++---config
+|       database.php
+|       database.sql
+|       datos.db.sql
+|       
+|---index.php
+|   
++---css
+|   |---style.css
+|       
++---images
+|    --chips-jalape±o.jpg
+|    --cocalcola600.png
+|    --danone.webp
+|    --laptop.jpg
+|    --prod_68afbbc0dab0a.png
+|    --prod_68b07e4350984.jpg
+|    --prod_68b0bc408924a.webp
+|    --prod_68b0c241b9e6e.jpg     
++---js
+|    --app.js
+|    --sweetalert2.min.js
+            
