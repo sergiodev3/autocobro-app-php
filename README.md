@@ -14,7 +14,7 @@ Sistema web de autocobro para tiendas y comercios, desarrollado en PHP puro y My
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+   git clone https://github.com/sergiodev3/autocobro-app-php.git
    ```
 2. Importa la base de datos desde `config/database.sql` usando phpMyAdmin.
 3. Copia `config/database.example.php` a `config/database.php` y agrega tus credenciales:
