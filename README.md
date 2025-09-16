@@ -1,36 +1,38 @@
-# Autocobro PHP
+# 🚀 Autocobro PHP
 
-Sistema web de autocobro para tiendas y comercios, desarrollado en PHP puro y MySQL.
+![GitHub repo size](https://img.shields.io/github/repo-size/sergiodev3/autocobro-app-php)
+![GitHub last commit](https://img.shields.io/github/last-commit/sergiodev3/autocobro-app-php)
+![GitHub](https://img.shields.io/github/license/sergiodev3/autocobro-app-php)
 
-## Características
+Sistema web de **autocobro**, desarrollado en PHP y MySQL.
 
-- Registro e inicio de sesión de usuarios
-- Administración de productos (agregar, editar, eliminar)
-- Carga y edición de imágenes de productos
-- Carrito de compras y generación de tickets
-- Historial de compras y protección de integridad referencial
+---
 
-## Instalación
+## ✨ Características
 
-1. Clona el repositorio:
+- 👤 Registro e inicio de sesión de usuarios
+- 📦 Administración de productos (agregar, editar, eliminar)
+- 🖼️ Carga y edición de imágenes de productos
+- 🛒 Carrito de compras y generación de tickets
+- 📈 Historial de compras y protección de integridad referencial
+
+---
+
+## 🛠️ Instalación
+
+1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+   git clone https://github.com/sergiodev3/autocobro-app-php.git
    ```
-2. Importa la base de datos desde `config/database.sql` usando phpMyAdmin.
-3. Copia `config/database.example.php` a `config/database.php` y agrega tus credenciales:
+2. **Importa la base de datos** desde `config/database.sql` usando phpMyAdmin.
+3. **Configura las credenciales** en `config/database.php` (usa `config/database.example.php` como guía).
+4. **Asegúrate que la carpeta `images/` tenga permisos de escritura.**
 
-   ```php
-   private $host = 'localhost';
-   private $db_name = 'tu_base_de_datos';
-   private $username = 'tu_usuario';
-   private $password = 'tu_contraseña';
-   ```
+---
 
-4. Asegúrate que la carpeta `images/` tenga permisos de escritura.
+## 📁 Estructura del proyecto
 
-## Estructura del proyecto
-
-```
+```plaintext
 app/
   controllers/
   models/
@@ -39,10 +41,37 @@ config/
 css/
 images/
 js/
+public/
 index.php
 .htaccess
 ```
 
-## Créditos
+---
 
-Desarrollado por sergiodev3.
+## 🗄️ Base de datos
+
+Importa el archivo `config/database.sql` para crear la estructura necesaria.
+
+```bash
+mysql -u usuario -p nombre_base_de_datos < config/database.sql
+```
+
+---
+
+## ⚠️ Seguridad
+
+- Las credenciales reales están ignoradas por `.gitignore`.
+- Usa `config/database.example.php` para compartir la estructura de conexión.
+
+---
+
+## 👨‍💻 Créditos
+
+Desarrollado por [sergiodev3](https://github.com/sergiodev3).
+
+---
+
+## 📬 Contacto
+
+¿Tienes dudas o sugerencias?  
+Abre un issue o contáctame en [sergio.sanchez@cbtis258.edu.mx](mailto:sergio.sanchez@cbtis258.edu.mx)
